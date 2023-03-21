@@ -1,0 +1,11 @@
+import openai
+openai.api_key = "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"
+response = openai.ChatCompletion.create(
+  model="gpt-3.5-turbo",
+  messages=[
+        {"role": "user", "content": "I need a resume letter"},
+        {"role": "user", "content": "For a job of physcologist"},
+        {"role": "user", "content": "The resume letter should have things like how i could improve the business."},
+    ]
+)
+print (response['choices'][0]['message']['content'])
