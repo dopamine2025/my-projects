@@ -7,7 +7,7 @@ async def send_message(message, user_message, is_private):
     except Exception as e:
         print(e)
 def run_discord_bot():
-    masterkey = "MTA5MDk4MjQyOTE4MDgyMTU2OQ.GNtD-J.cbJ3FPOmKVFvqjGwjwt6BlFY5BoTUJnytOIz5U"
+    masterkey = ""
     client = discord.Client()
     @client.event
     async def on_ready():
